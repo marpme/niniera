@@ -4,13 +4,17 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "vitest"
   },
   "keywords": [],
-  "author": "",
+  "author": "marpme",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^20.8.10",
-    "typescript": "^5.2.2"
+    "@vitest/coverage-v8": "^0.34.6",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   }
 }
