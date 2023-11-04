@@ -90,7 +90,7 @@ export class Optional<E extends Error, X = unknown> {
         if (e instanceof Panic) {
           throw e;
         } else {
-          throw new Panic(expectationStatement, e);
+          throw new Panic(expectationStatement);
         }
       }
     });
