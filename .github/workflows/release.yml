@@ -19,10 +19,19 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Determine NPM Tag
+        id: determine_tag
+        run: |
+          if [[ ${{ github.ref }} == *"beta"* ]]; then
+            echo "::set-output name=tag::beta"
+          else
+            echo "::set-output name=tag::latest"
+          fi
+
       - name: Publish to NPM
         run: |
           echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-          npm publish --access public
+          npm publish --access public --tag ${{ steps.determine_tag.outputs.tag }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
