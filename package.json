@@ -26,7 +26,8 @@
     "tsdoc": "tsdoc --src=./src/{optional,panic}.ts --dest=API.md",
     "ts:check": "tsc -p tsconfig.check.json --noEmit",
     "validate": "npm run ts:check && npm run tsdoc && prettier --check .",
-    "release": "bumpp package.json"
+    "release": "bumpp package.json",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

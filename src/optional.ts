@@ -5,7 +5,7 @@ import { Panic } from "./panic";
  * Represents an optional value that may or may not be present.
  * If the value is present, it can be unwrapped and used.
  * If the value is not present, an error will be thrown.
- * 
+ *
  * @template E - The type of error that may be thrown if the value is not present.
  * @template X - The type of the value that may be present.
  */
@@ -53,7 +53,7 @@ export class Optional<E extends Error, X = unknown> {
   /**
    * Returns a new Optional instance with the result of calling the provided function `fn` if this Optional instance
    * contains an error. If this Optional instance does not contain an error, the result of calling `unwrap()` is returned.
-   * 
+   *
    * @param fn - The function to call if this Optional instance contains an error.
    * @returns A new Optional instance with the result of calling the provided function `fn` if this Optional instance
    * contains an error. If this Optional instance does not contain an error, the result of calling `unwrap()` is returned.
@@ -68,12 +68,11 @@ export class Optional<E extends Error, X = unknown> {
     });
   }
 
-  
   /**
    * Unwraps the value of the Optional instance.
    * If the value is not present, throws an error.
    * If the value is present, returns it.
-   * 
+   *
    * @returns The value of the Optional instance.
    * @throws An error if the value is not present.
    */
@@ -96,7 +95,7 @@ export class Optional<E extends Error, X = unknown> {
 
   /**
    * Returns the value of the Optional if present, otherwise returns the result of the provided function.
-   * 
+   *
    * @param fn - The function to be executed if the Optional is empty.
    * @returns The value of the Optional if present, otherwise the result of the provided function.
    */
@@ -110,7 +109,7 @@ export class Optional<E extends Error, X = unknown> {
 
   /**
    * Returns an Optional that will either contain the unwrapped value of this Optional, or will throw a Panic with the given expectation statement.
-   * 
+   *
    * @param expectationStatement A string describing the expectation of the unwrapped value.
    * @returns An Optional that will either contain the unwrapped value of this Optional, or will throw a Panic with the given expectation statement.
    */

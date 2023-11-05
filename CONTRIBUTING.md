@@ -55,7 +55,6 @@ All contributions will be reviewed by the project maintainers. We will provide f
 
 If you encounter any violations of our Code of Conduct, please report them by contacting niniera.ay1ai@simplelogin.com. We take these reports seriously and will address them promptly.
 
-
 _Thank you for your interest in contributing to `nini-era`. We appreciate your support in making this open-source project better!_
 
 _Happy coding!_
