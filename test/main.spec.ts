@@ -1,5 +1,5 @@
 import { describe, expect, expectTypeOf, it, vi } from "vitest";
-import { Optional } from "./main";
+import { Optional } from "../src/main";
 
 const throwAnyError = () => {
   if (1 === 1) {
