@@ -41,14 +41,14 @@ describe("optional cases", () => {
       const a = Optional.of(throwAnyError);
 
       expect(() => a.unwrap()).toThrowErrorMatchingInlineSnapshot(
-        '"any error"',
+        '"any error"'
       );
     });
 
     it("returned error is being auto-thrown!", () => {
       const a = Optional.of(getAnyError);
       expect(() => a.unwrap()).toThrowErrorMatchingInlineSnapshot(
-        '"any error"',
+        '"any error"'
       );
     });
   });
@@ -112,7 +112,7 @@ describe("optional cases", () => {
           .expect("splitting failed")
           .then((data) => data.join(":"))
           .expect("expected split name")
-          .unwrap(),
+          .unwrap()
       ).toThrowErrorMatchingInlineSnapshot('"Panicked at uppercase failed"');
 
       expect(test).toBeCalledTimes(1);
@@ -130,7 +130,7 @@ describe("optional cases", () => {
           .expect("splitting failed")
           .then((data) => data.join(":"))
           .expect("expected split name")
-          .elseUnwrap(() => "any name?"),
+          .elseUnwrap(() => "any name?")
       ).toStrictEqual("any name?");
 
       expect(test).toBeCalledTimes(1);
