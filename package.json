@@ -1,7 +1,21 @@
 {
   "name": "nini-era",
+  "description": "Bridging the Gap Between JavaScript and Rust for Effortless Error Handling and Elegance",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://github.com/marpme/niniera#readme",
+  "author": "marpme",
+  "license": "Apache-2.0",
+  "repository": "marpme/niniera",
+  "keywords": [
+    "javascript",
+    "promises",
+    "wrapper",
+    "library",
+    "typescript",
+    "rust-lang",
+    "error-handling",
+    "optional"
+  ],
   "main": "dist/main.js",
   "files": [
     "dist"
@@ -11,9 +25,6 @@
     "test": "vitest",
     "release": "bumpp package.json"
   },
-  "keywords": [],
-  "author": "marpme",
-  "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^20.8.10",
     "@vitest/coverage-v8": "^0.34.6",
