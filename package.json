@@ -21,10 +21,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json",
     "test": "vitest",
     "tsdoc": "tsdoc --src=./src/{optional,panic}.ts --dest=API.md",
-    "release": "bumpp package.json"
+    "ts:check": "tsc -p tsconfig.check.json --noEmit",
+    "validate": "npm run ts:check && npm run tsdoc && prettier --check .",
+    "release": "bumpp package.json",
+    "prettier": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
