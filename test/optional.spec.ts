@@ -68,7 +68,7 @@ describe("optional cases", () => {
 
       expect(unwrap).toThrowError(Panic);
       expect(unwrap).toThrowErrorMatchingInlineSnapshot(
-        '"Panicked at unwrapping a value"'
+        '"Panicked at unwrapping a value"',
       );
     });
 
