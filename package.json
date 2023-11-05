@@ -1,11 +1,13 @@
 {
-  "name": "nini-era",
+  "name": "niniera",
   "version": "1.0.0",
   "description": "",
   "main": "dist/main.js",
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
-    "test": "vitest"
+    "test": "vitest",
+    "release": "bumpp package.json"
   },
   "keywords": [],
   "author": "marpme",
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^20.8.10",
     "@vitest/coverage-v8": "^0.34.6",
+    "bumpp": "^9.2.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
