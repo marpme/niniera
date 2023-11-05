@@ -1,13 +1,13 @@
-# Niniera 🚀
+# nini-era 🚀
 ### Bringing Rust-Inspired Optional and Error Handling to JavaScript
 
-**Niniera** is an npm package that introduces Rust's `Option` and error handling concepts to JavaScript, offering a powerful and elegant solution.
+**nini-era** is a npm package that introduces Rust's `Option` and error handling concepts to JavaScript, offering a powerful and elegant solution.
 
-The name "Niniera" is inspired by the Japanese term "nini era" (任意エラー), which conveys the idea of an error that is not mandatory and can be managed or ignored based on the context. This library aims to simplify and enhance error handling and optional value management in your JavaScript code.
+The name "nini-era" is inspired by the Japanese term "nini era" (任意エラー), which conveys the idea of an error that is not mandatory and can be managed or ignored based on the context. This library aims to simplify and enhance error handling and optional value management in your JavaScript code.
 
 ## Key Features 🌟
 
-With **Niniera**, you can:
+With **nini-era**, you can:
 
 - Effortlessly handle errors 🛠️
 - Streamline your error-handling workflow with clean and concise code 📝
@@ -16,15 +16,15 @@ You can chain error-handling operations, making your code more readable and main
 
 ## Installation 💡
 
-You can install **Niniera** via npm:
+You can install **nini-era** via npm:
 
 ```bash
-npm add niniera
+npm add nini-era
 ```
 
 ## Usage 💻
 
-Here's a brief overview of how you can use **Niniera** in your JavaScript code:
+Here's a brief overview of how you can use **nini-era** in your JavaScript code:
 
 ```javascript
 // Everything happens synchronously
@@ -53,22 +53,22 @@ const result = Optional.of(anyFunction)
 
 ## Documentation 📘
 
-For more in-depth information on using **Niniera**, refer to the [documentation](https://github.com/your-nini-era-repo/documentation) and explore examples in the `examples` directory of this repository.
+For more in-depth information on using **nini-era**, refer to the [documentation](https://github.com/your-nini-era-repo/documentation) and explore examples in the `examples` directory of this repository.
 
 ## Contributing 🤝
 
-We welcome contributions from the community! If you want to enhance **Niniera**, please review our [contribution guidelines](CONTRIBUTING.md) to get started.
+We welcome contributions from the community! If you want to enhance **nini-era**, please review our [contribution guidelines](./CONTRIBUTING.md) to get started.
 
 ## License 📜
 
-**Niniera** is licensed under the Apache-2.0 License. See [LICENSE](LICENSE) for more details.
+**nini-era** is licensed under the Apache-2.0 License. See [LICENSE](LICENSE) for more details.
 
 ## Credits 🙏
 
-**Niniera** draws inspiration from the simplicity and elegance of Rust's `Option` and error handling. We extend our gratitude to the Rust community for inspiring this project.
+**nini-era** draws inspiration from the simplicity and elegance of Rust's `Option` and error handling. We extend our gratitude to the Rust community for inspiring this project.
 
 [GitHub Repository](https://github.com/marpme/niniera)
 
 ---
 
-_"Niniera - Where simplicity meets elegance."_
+_"nini-era - Where simplicity meets elegance."_
