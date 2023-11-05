@@ -1,7 +1,7 @@
 {
   "name": "nini-era",
   "description": "Bridging the Gap Between JavaScript and Rust for Effortless Error Handling and Elegance",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/marpme/niniera#readme",
   "author": "marpme",
   "license": "Apache-2.0",
